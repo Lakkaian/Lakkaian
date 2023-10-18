@@ -1,0 +1,22 @@
+AI-based diabetes prediction systems are becoming increasingly popular in the medical field. These systems use artificial intelligence and machine learning algorithms to predict the risk of diabetes in patients. According to a recent review, AI/ML-based medical devices and prediction models have already been approved by the US Food and Drug Administration for automatic retinal screening, clinical diagnosis support, and patient self-management tools1.
+
+In one study, researchers evaluated 35 different machine learning algorithms for diabetes type 2 prediction using a unified setup2. Another study proposed a machine learning-based approach for the classification, early-stage identification, and prediction of diabetes3.
+
+It is expected that the predictive performance of AI will soon be maximized by a large amount of organized data and abundant computational resources, which will contribute to a dramatic improvement in the accuracy of disease prediction models for diabetes1.
+
+The applied machine learning models have been deployed into a website or smartphone application in some of the articles. In one study, the authors [16] designed a website for the automatic prediction of diabetes. This work employed two open‐source datasets and various popular machine learning approaches. The decision tree and random forest classifiers obtained the highest performance for this work with an accuracy of 0.968. Ramesh et al. [18] designed a remote and automatic system for diabetes forecasting with the Pima Indian dataset. The authors employed different data preprocessing techniques, that is, feature scaling, feature selection, and SMOTE. SVM with RBF kernel attained a maximum accuracy of 83.2%. The proposed ML framework is employed in an Android application.
+Implementing Machine Learning Models
+
+We will test many machine learning models and compare their accuracy in this part. After that, we will tune the hyperparameters on models with good precision.
+
+We will use sklearn.preprocessing to convert the data into quantiles before dividing the dataset.
+Output
+
+CrossValMean	CrossValStd	Model List
+0	0.697921	0.067773	DecisionTreeClassifier
+1	0.780358	0.085376	LogisticRegression
+2	0.782437	0.069578	SVC
+3	0.686882	0.050551	AdaBoostClassifier
+4	0.762796	0.072912	GradientBoostingClassifier
+5	0.760717	0.079104	RandomForestClassifier
+6	0.739283	0.043985	KNeighborsClassifier
